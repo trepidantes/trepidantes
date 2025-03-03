@@ -11,6 +11,7 @@ function App() {
   console.log("PUBLIC_URL", process.env.PUBLIC_URL);
   console.log("REACT_APP_URL", process.env.REACT_APP_URL);
   console.log("REACT_APP_PUBLIC_URL", process.env.REACT_APP_PUBLIC_URL);
+  console.log("REACT_APP_TEST", process.env.REACT_APP_TEST);
   console.log("basename", basename);
   return (
     <BrowserRouter basename={basename}>
@@ -18,7 +19,7 @@ function App() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Trepidantes <code>on construction</code> v0.0.2
+            <code className="text-4xl text-blue-500 font-bold italic underline">on construction</code> v0.0.2
           </p>
           <a
             className="App-link"
